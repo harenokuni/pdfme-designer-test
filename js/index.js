@@ -984,14 +984,14 @@ __webpack_require__.r(__webpack_exports__);
 var _withScopeId = function (n) { return ((0,vue__WEBPACK_IMPORTED_MODULE_0__.pushScopeId)("data-v-929b8376"), n = n(), (0,vue__WEBPACK_IMPORTED_MODULE_0__.popScopeId)(), n); };
 var _hoisted_1 = { class: "RootView" };
 function render(_ctx, _cache, $props, $setup, $data, $options) {
-    var _component_router_view = (0,vue__WEBPACK_IMPORTED_MODULE_0__.resolveComponent)("router-view");
+    var _component_ComPdfDesigner = (0,vue__WEBPACK_IMPORTED_MODULE_0__.resolveComponent)("ComPdfDesigner");
     var _component_VcToast = (0,vue__WEBPACK_IMPORTED_MODULE_0__.resolveComponent)("VcToast");
     var _component_VcWindowLoader = (0,vue__WEBPACK_IMPORTED_MODULE_0__.resolveComponent)("VcWindowLoader");
     var _component_VcDialog = (0,vue__WEBPACK_IMPORTED_MODULE_0__.resolveComponent)("VcDialog");
     var _component_VcSelectModal = (0,vue__WEBPACK_IMPORTED_MODULE_0__.resolveComponent)("VcSelectModal");
     return ((0,vue__WEBPACK_IMPORTED_MODULE_0__.openBlock)(), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementBlock)(vue__WEBPACK_IMPORTED_MODULE_0__.Fragment, null, [
         (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", _hoisted_1, [
-            (0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)(_component_router_view)
+            (0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)(_component_ComPdfDesigner)
         ]),
         ((0,vue__WEBPACK_IMPORTED_MODULE_0__.openBlock)(), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createBlock)(vue__WEBPACK_IMPORTED_MODULE_0__.Teleport, { to: "#teleport" }, [
             (0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)(_component_VcToast, {
@@ -3560,51 +3560,6 @@ var Pdf;
 
 /***/ }),
 
-/***/ "./src/script/com/com-router.ts":
-/*!**************************************!*\
-  !*** ./src/script/com/com-router.ts ***!
-  \**************************************/
-/***/ (function(__unused_webpack_module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-/* harmony export */ __webpack_require__.d(__webpack_exports__, {
-/* harmony export */   "ComRouter": function() { return /* binding */ ComRouter; }
-/* harmony export */ });
-/*-------------------------------------------------------------------
--------------------------------------------------------------------*/
-var ComRouter;
-(function (ComRouter) {
-    var Com;
-    (function (Com) {
-        Com.Dashboard = {
-            path: '/',
-            name: 'com-Dashboard',
-            meta: {
-                title: 'PDFME Designer',
-            },
-        };
-        Com.NotFound = {
-            path: '/not-found',
-            name: 'com-not-found',
-            meta: {
-                title: 'お探しのページは見つかりません',
-            },
-        };
-        // export const PdfDesigner = {
-        //   path: '/pdf-designer',
-        //   name: 'PDF-Designer',
-        //   meta: {
-        //     title: 'PDF-Designer',
-        //     note: 'PDF編集画面',
-        //   },
-        // };
-    })(Com = ComRouter.Com || (ComRouter.Com = {}));
-})(ComRouter || (ComRouter = {}));
-
-
-/***/ }),
-
 /***/ "./src/script/com/com.ts":
 /*!*******************************!*\
   !*** ./src/script/com/com.ts ***!
@@ -3765,25 +3720,24 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var moment__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(moment__WEBPACK_IMPORTED_MODULE_1__);
 /* harmony import */ var vue__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! vue */ "./node_modules/vue/dist/vue.runtime.esm-bundler.js");
 /* harmony import */ var _script_root_view_vue__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! @/script/root-view.vue */ "./src/script/root-view.vue");
-/* harmony import */ var _script_vue_router__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! @/script/vue-router */ "./src/script/vue-router.ts");
-/* harmony import */ var _script_store_store_app__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! @/script/store/store-app */ "./src/script/store/store-app.ts");
-/* harmony import */ var _script_store_store_component__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! @/script/store/store-component */ "./src/script/store/store-component.ts");
-/* harmony import */ var _script_vc_components_vc_toast_vue__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! @/script/vc-components/vc-toast.vue */ "./src/script/vc-components/vc-toast.vue");
-/* harmony import */ var _script_vc_components_vc_dialog_vue__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! @/script/vc-components/vc-dialog.vue */ "./src/script/vc-components/vc-dialog.vue");
-/* harmony import */ var _script_vc_components_vc_window_loader_vue__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! @/script/vc-components/vc-window-loader.vue */ "./src/script/vc-components/vc-window-loader.vue");
-/* harmony import */ var _script_vc_components_vc_form_control_vc_select_box_modal_vue__WEBPACK_IMPORTED_MODULE_10__ = __webpack_require__(/*! @/script/vc-components/vc-form-control/vc-select-box-modal.vue */ "./src/script/vc-components/vc-form-control/vc-select-box-modal.vue");
-/* harmony import */ var _script_vc_components_vc_link_vue__WEBPACK_IMPORTED_MODULE_11__ = __webpack_require__(/*! @/script/vc-components/vc-link.vue */ "./src/script/vc-components/vc-link.vue");
-/* harmony import */ var _script_vc_components_vc_accordion_vue__WEBPACK_IMPORTED_MODULE_12__ = __webpack_require__(/*! @/script/vc-components/vc-accordion.vue */ "./src/script/vc-components/vc-accordion.vue");
-/* harmony import */ var _script_vc_components_vc_form_control_vc_form_control_vue__WEBPACK_IMPORTED_MODULE_13__ = __webpack_require__(/*! @/script/vc-components/vc-form-control/vc-form-control.vue */ "./src/script/vc-components/vc-form-control/vc-form-control.vue");
-/* harmony import */ var _script_vc_components_vc_form_control_vc_form_button_vue__WEBPACK_IMPORTED_MODULE_14__ = __webpack_require__(/*! @/script/vc-components/vc-form-control/vc-form-button.vue */ "./src/script/vc-components/vc-form-control/vc-form-button.vue");
-/* harmony import */ var _script_vc_components_vc_form_control_vc_select_box_vue__WEBPACK_IMPORTED_MODULE_15__ = __webpack_require__(/*! @/script/vc-components/vc-form-control/vc-select-box.vue */ "./src/script/vc-components/vc-form-control/vc-select-box.vue");
-/* harmony import */ var _script_vc_components_vc_form_control_vc_datepicker_vue__WEBPACK_IMPORTED_MODULE_16__ = __webpack_require__(/*! @/script/vc-components/vc-form-control/vc-datepicker.vue */ "./src/script/vc-components/vc-form-control/vc-datepicker.vue");
-/* harmony import */ var _script_vc_components_vc_form_control_vc_valuebox_vue__WEBPACK_IMPORTED_MODULE_17__ = __webpack_require__(/*! @/script/vc-components/vc-form-control/vc-valuebox.vue */ "./src/script/vc-components/vc-form-control/vc-valuebox.vue");
-/* harmony import */ var _script_vc_components_vc_form_control_vc_textbox_vue__WEBPACK_IMPORTED_MODULE_18__ = __webpack_require__(/*! @/script/vc-components/vc-form-control/vc-textbox.vue */ "./src/script/vc-components/vc-form-control/vc-textbox.vue");
-/* harmony import */ var _script_vc_components_vc_form_control_vc_textarea_vue__WEBPACK_IMPORTED_MODULE_19__ = __webpack_require__(/*! @/script/vc-components/vc-form-control/vc-textarea.vue */ "./src/script/vc-components/vc-form-control/vc-textarea.vue");
-/* harmony import */ var _script_vc_components_vc_form_control_vc_radio_box_vue__WEBPACK_IMPORTED_MODULE_20__ = __webpack_require__(/*! @/script/vc-components/vc-form-control/vc-radio-box.vue */ "./src/script/vc-components/vc-form-control/vc-radio-box.vue");
-/* harmony import */ var _script_vc_components_vc_form_control_vc_toggle_switch_vue__WEBPACK_IMPORTED_MODULE_21__ = __webpack_require__(/*! @/script/vc-components/vc-form-control/vc-toggle-switch.vue */ "./src/script/vc-components/vc-form-control/vc-toggle-switch.vue");
-/* harmony import */ var _script_vc_components_vc_form_control_vc_check_box_vue__WEBPACK_IMPORTED_MODULE_22__ = __webpack_require__(/*! @/script/vc-components/vc-form-control/vc-check-box.vue */ "./src/script/vc-components/vc-form-control/vc-check-box.vue");
+/* harmony import */ var _script_store_store_app__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! @/script/store/store-app */ "./src/script/store/store-app.ts");
+/* harmony import */ var _script_store_store_component__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! @/script/store/store-component */ "./src/script/store/store-component.ts");
+/* harmony import */ var _script_vc_components_vc_toast_vue__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! @/script/vc-components/vc-toast.vue */ "./src/script/vc-components/vc-toast.vue");
+/* harmony import */ var _script_vc_components_vc_dialog_vue__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! @/script/vc-components/vc-dialog.vue */ "./src/script/vc-components/vc-dialog.vue");
+/* harmony import */ var _script_vc_components_vc_window_loader_vue__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! @/script/vc-components/vc-window-loader.vue */ "./src/script/vc-components/vc-window-loader.vue");
+/* harmony import */ var _script_vc_components_vc_form_control_vc_select_box_modal_vue__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! @/script/vc-components/vc-form-control/vc-select-box-modal.vue */ "./src/script/vc-components/vc-form-control/vc-select-box-modal.vue");
+/* harmony import */ var _script_vc_components_vc_link_vue__WEBPACK_IMPORTED_MODULE_10__ = __webpack_require__(/*! @/script/vc-components/vc-link.vue */ "./src/script/vc-components/vc-link.vue");
+/* harmony import */ var _script_vc_components_vc_accordion_vue__WEBPACK_IMPORTED_MODULE_11__ = __webpack_require__(/*! @/script/vc-components/vc-accordion.vue */ "./src/script/vc-components/vc-accordion.vue");
+/* harmony import */ var _script_vc_components_vc_form_control_vc_form_control_vue__WEBPACK_IMPORTED_MODULE_12__ = __webpack_require__(/*! @/script/vc-components/vc-form-control/vc-form-control.vue */ "./src/script/vc-components/vc-form-control/vc-form-control.vue");
+/* harmony import */ var _script_vc_components_vc_form_control_vc_form_button_vue__WEBPACK_IMPORTED_MODULE_13__ = __webpack_require__(/*! @/script/vc-components/vc-form-control/vc-form-button.vue */ "./src/script/vc-components/vc-form-control/vc-form-button.vue");
+/* harmony import */ var _script_vc_components_vc_form_control_vc_select_box_vue__WEBPACK_IMPORTED_MODULE_14__ = __webpack_require__(/*! @/script/vc-components/vc-form-control/vc-select-box.vue */ "./src/script/vc-components/vc-form-control/vc-select-box.vue");
+/* harmony import */ var _script_vc_components_vc_form_control_vc_datepicker_vue__WEBPACK_IMPORTED_MODULE_15__ = __webpack_require__(/*! @/script/vc-components/vc-form-control/vc-datepicker.vue */ "./src/script/vc-components/vc-form-control/vc-datepicker.vue");
+/* harmony import */ var _script_vc_components_vc_form_control_vc_valuebox_vue__WEBPACK_IMPORTED_MODULE_16__ = __webpack_require__(/*! @/script/vc-components/vc-form-control/vc-valuebox.vue */ "./src/script/vc-components/vc-form-control/vc-valuebox.vue");
+/* harmony import */ var _script_vc_components_vc_form_control_vc_textbox_vue__WEBPACK_IMPORTED_MODULE_17__ = __webpack_require__(/*! @/script/vc-components/vc-form-control/vc-textbox.vue */ "./src/script/vc-components/vc-form-control/vc-textbox.vue");
+/* harmony import */ var _script_vc_components_vc_form_control_vc_textarea_vue__WEBPACK_IMPORTED_MODULE_18__ = __webpack_require__(/*! @/script/vc-components/vc-form-control/vc-textarea.vue */ "./src/script/vc-components/vc-form-control/vc-textarea.vue");
+/* harmony import */ var _script_vc_components_vc_form_control_vc_radio_box_vue__WEBPACK_IMPORTED_MODULE_19__ = __webpack_require__(/*! @/script/vc-components/vc-form-control/vc-radio-box.vue */ "./src/script/vc-components/vc-form-control/vc-radio-box.vue");
+/* harmony import */ var _script_vc_components_vc_form_control_vc_toggle_switch_vue__WEBPACK_IMPORTED_MODULE_20__ = __webpack_require__(/*! @/script/vc-components/vc-form-control/vc-toggle-switch.vue */ "./src/script/vc-components/vc-form-control/vc-toggle-switch.vue");
+/* harmony import */ var _script_vc_components_vc_form_control_vc_check_box_vue__WEBPACK_IMPORTED_MODULE_21__ = __webpack_require__(/*! @/script/vc-components/vc-form-control/vc-check-box.vue */ "./src/script/vc-components/vc-form-control/vc-check-box.vue");
 
 
 moment__WEBPACK_IMPORTED_MODULE_1___default().locale('ja');
@@ -3793,14 +3747,11 @@ moment__WEBPACK_IMPORTED_MODULE_1___default().locale('ja');
 
 var vueApp = (0,vue__WEBPACK_IMPORTED_MODULE_2__.createApp)(_script_root_view_vue__WEBPACK_IMPORTED_MODULE_3__["default"]);
 //----------------------
-//Router
-
-vueApp.use(_script_vue_router__WEBPACK_IMPORTED_MODULE_4__.VueRouter.Router);
 //Store
 
-vueApp.use(_script_store_store_app__WEBPACK_IMPORTED_MODULE_5__.StoreApp.Store, _script_store_store_app__WEBPACK_IMPORTED_MODULE_5__.StoreApp.StoreKey);
+vueApp.use(_script_store_store_app__WEBPACK_IMPORTED_MODULE_4__.StoreApp.Store, _script_store_store_app__WEBPACK_IMPORTED_MODULE_4__.StoreApp.StoreKey);
 
-vueApp.use(_script_store_store_component__WEBPACK_IMPORTED_MODULE_6__.StoreComponent.Store, _script_store_store_component__WEBPACK_IMPORTED_MODULE_6__.StoreComponent.StoreKey);
+vueApp.use(_script_store_store_component__WEBPACK_IMPORTED_MODULE_5__.StoreComponent.Store, _script_store_store_component__WEBPACK_IMPORTED_MODULE_5__.StoreComponent.StoreKey);
 //----------------------
 //各種コンポーネント
 // import VcTabulator from '@/script/vc-components/vc-tabulator.vue';
@@ -3808,41 +3759,41 @@ vueApp.use(_script_store_store_component__WEBPACK_IMPORTED_MODULE_6__.StoreCompo
 //----------------------
 //Modal系
 
-vueApp.component('VcToast', _script_vc_components_vc_toast_vue__WEBPACK_IMPORTED_MODULE_7__["default"]);
+vueApp.component('VcToast', _script_vc_components_vc_toast_vue__WEBPACK_IMPORTED_MODULE_6__["default"]);
 
-vueApp.component('VcDialog', _script_vc_components_vc_dialog_vue__WEBPACK_IMPORTED_MODULE_8__["default"]);
+vueApp.component('VcDialog', _script_vc_components_vc_dialog_vue__WEBPACK_IMPORTED_MODULE_7__["default"]);
 
-vueApp.component('VcWindowLoader', _script_vc_components_vc_window_loader_vue__WEBPACK_IMPORTED_MODULE_9__["default"]);
+vueApp.component('VcWindowLoader', _script_vc_components_vc_window_loader_vue__WEBPACK_IMPORTED_MODULE_8__["default"]);
 
-vueApp.component('VcSelectModal', _script_vc_components_vc_form_control_vc_select_box_modal_vue__WEBPACK_IMPORTED_MODULE_10__["default"]);
+vueApp.component('VcSelectModal', _script_vc_components_vc_form_control_vc_select_box_modal_vue__WEBPACK_IMPORTED_MODULE_9__["default"]);
 //----------------------
 //sonota
 
-vueApp.component('VcLink', _script_vc_components_vc_link_vue__WEBPACK_IMPORTED_MODULE_11__["default"]);
+vueApp.component('VcLink', _script_vc_components_vc_link_vue__WEBPACK_IMPORTED_MODULE_10__["default"]);
 
-vueApp.component('VcAccordion', _script_vc_components_vc_accordion_vue__WEBPACK_IMPORTED_MODULE_12__["default"]);
+vueApp.component('VcAccordion', _script_vc_components_vc_accordion_vue__WEBPACK_IMPORTED_MODULE_11__["default"]);
 //----------------------
 //FormControl系
 
-vueApp.component('VcFormControl', _script_vc_components_vc_form_control_vc_form_control_vue__WEBPACK_IMPORTED_MODULE_13__["default"]);
+vueApp.component('VcFormControl', _script_vc_components_vc_form_control_vc_form_control_vue__WEBPACK_IMPORTED_MODULE_12__["default"]);
 
-vueApp.component('VcFormButton', _script_vc_components_vc_form_control_vc_form_button_vue__WEBPACK_IMPORTED_MODULE_14__["default"]);
+vueApp.component('VcFormButton', _script_vc_components_vc_form_control_vc_form_button_vue__WEBPACK_IMPORTED_MODULE_13__["default"]);
 
-vueApp.component('VcSelectBox', _script_vc_components_vc_form_control_vc_select_box_vue__WEBPACK_IMPORTED_MODULE_15__["default"]);
+vueApp.component('VcSelectBox', _script_vc_components_vc_form_control_vc_select_box_vue__WEBPACK_IMPORTED_MODULE_14__["default"]);
 
-vueApp.component('VcDatePicker', _script_vc_components_vc_form_control_vc_datepicker_vue__WEBPACK_IMPORTED_MODULE_16__["default"]);
+vueApp.component('VcDatePicker', _script_vc_components_vc_form_control_vc_datepicker_vue__WEBPACK_IMPORTED_MODULE_15__["default"]);
 
-vueApp.component('VcValuebox', _script_vc_components_vc_form_control_vc_valuebox_vue__WEBPACK_IMPORTED_MODULE_17__["default"]);
+vueApp.component('VcValuebox', _script_vc_components_vc_form_control_vc_valuebox_vue__WEBPACK_IMPORTED_MODULE_16__["default"]);
 
-vueApp.component('VcTextbox', _script_vc_components_vc_form_control_vc_textbox_vue__WEBPACK_IMPORTED_MODULE_18__["default"]);
+vueApp.component('VcTextbox', _script_vc_components_vc_form_control_vc_textbox_vue__WEBPACK_IMPORTED_MODULE_17__["default"]);
 
-vueApp.component('VcTextarea', _script_vc_components_vc_form_control_vc_textarea_vue__WEBPACK_IMPORTED_MODULE_19__["default"]);
+vueApp.component('VcTextarea', _script_vc_components_vc_form_control_vc_textarea_vue__WEBPACK_IMPORTED_MODULE_18__["default"]);
 
-vueApp.component('VcRadioBox', _script_vc_components_vc_form_control_vc_radio_box_vue__WEBPACK_IMPORTED_MODULE_20__["default"]);
+vueApp.component('VcRadioBox', _script_vc_components_vc_form_control_vc_radio_box_vue__WEBPACK_IMPORTED_MODULE_19__["default"]);
 
-vueApp.component('VcToggleSwitch', _script_vc_components_vc_form_control_vc_toggle_switch_vue__WEBPACK_IMPORTED_MODULE_21__["default"]);
+vueApp.component('VcToggleSwitch', _script_vc_components_vc_form_control_vc_toggle_switch_vue__WEBPACK_IMPORTED_MODULE_20__["default"]);
 
-vueApp.component('VcCheckBox', _script_vc_components_vc_form_control_vc_check_box_vue__WEBPACK_IMPORTED_MODULE_22__["default"]);
+vueApp.component('VcCheckBox', _script_vc_components_vc_form_control_vc_check_box_vue__WEBPACK_IMPORTED_MODULE_21__["default"]);
 //----------------------
 vueApp.mount('#app');
 //--------------------------
@@ -3869,21 +3820,17 @@ window.addEventListener('unhandledrejection', function (event) {
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
-/* harmony import */ var tslib__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! tslib */ "./node_modules/tslib/tslib.es6.js");
-/* harmony import */ var _script_vue_router__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @/script/vue-router */ "./src/script/vue-router.ts");
-/* harmony import */ var _script_store_store_component__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @/script/store/store-component */ "./src/script/store/store-component.ts");
-/* harmony import */ var _script_views_com_view_pdf_designer_vue__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! @/script/views/com/view-pdf-designer.vue */ "./src/script/views/com/view-pdf-designer.vue");
-/* harmony import */ var _script_store_store_app__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! @/script/store/store-app */ "./src/script/store/store-app.ts");
-/* harmony import */ var vue__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! vue */ "./node_modules/vue/dist/vue.runtime.esm-bundler.js");
-/* harmony import */ var vuex__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! vuex */ "./node_modules/vuex/dist/vuex.esm-bundler.js");
+/* harmony import */ var tslib__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! tslib */ "./node_modules/tslib/tslib.es6.js");
+/* harmony import */ var _script_store_store_component__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @/script/store/store-component */ "./src/script/store/store-component.ts");
+/* harmony import */ var _script_views_com_view_pdf_designer_vue__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @/script/views/com/view-pdf-designer.vue */ "./src/script/views/com/view-pdf-designer.vue");
+/* harmony import */ var _script_store_store_app__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! @/script/store/store-app */ "./src/script/store/store-app.ts");
+/* harmony import */ var vue__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! vue */ "./node_modules/vue/dist/vue.runtime.esm-bundler.js");
+/* harmony import */ var vuex__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! vuex */ "./node_modules/vuex/dist/vuex.esm-bundler.js");
 /*---------------------------------------------------------------------------------
   root-view-script.ts
 ---------------------------------------------------------------------------------*/
 
 // [ node_modules ]----------------------------------------------------------------
-// [ Router ]----------------------------------------------------------------------
-
-// [ 共通コンポーネント用 ]--------------------------------------------------------
 
 
 // [ Store 共通系 ]----------------------------------------------------------------
@@ -3891,51 +3838,29 @@ __webpack_require__.r(__webpack_exports__);
 // [ Vue.js系 ]--------------------------------------------------------------------
 
 
+
 // --------------------------------------------------------------------------------
-/* harmony default export */ __webpack_exports__["default"] = ((0,vue__WEBPACK_IMPORTED_MODULE_4__.defineComponent)({
-    components: { ComPdfDesigner: _script_views_com_view_pdf_designer_vue__WEBPACK_IMPORTED_MODULE_2__["default"] },
+/* harmony default export */ __webpack_exports__["default"] = ((0,vue__WEBPACK_IMPORTED_MODULE_3__.defineComponent)({
+    components: { ComPdfDesigner: _script_views_com_view_pdf_designer_vue__WEBPACK_IMPORTED_MODULE_1__["default"] },
     setup: function () {
         var _this = this;
-        var currentRoute = _script_vue_router__WEBPACK_IMPORTED_MODULE_0__.VueRouter.Router.currentRoute;
-        var state = (0,vue__WEBPACK_IMPORTED_MODULE_4__.reactive)({
+        var state = (0,vue__WEBPACK_IMPORTED_MODULE_3__.reactive)({
             serverState: '',
             isShowServerState: false,
         });
-        (0,vue__WEBPACK_IMPORTED_MODULE_4__.watch)(function () { return currentRoute.value; }, function () {
-            changeTitle();
-        });
-        if (/staging/.test(location.href)) {
-            state.serverState = '検証用';
-            state.isShowServerState = true;
-        }
-        if (/localhost/.test(location.href)) {
-            state.serverState = '開発用';
-            state.isShowServerState = true;
-        }
-        if (/192.168/.test(location.href)) {
-            state.serverState = '開発用';
-            state.isShowServerState = true;
-        }
-        var changeTitle = function () {
-            document.title = String(currentRoute.value.meta.title);
-        };
-        // [▼ Router ▼]----------------------------------------------------------
-        var activePageName = (0,vue__WEBPACK_IMPORTED_MODULE_4__.computed)(function () {
-            return String(currentRoute.value.name);
-        });
         // [▼ 共通コンポーネント ▼]----------------------------------------------
-        var storeComponent = (0,vuex__WEBPACK_IMPORTED_MODULE_5__.useStore)(_script_store_store_component__WEBPACK_IMPORTED_MODULE_1__.StoreComponent.StoreKey);
-        _script_store_store_component__WEBPACK_IMPORTED_MODULE_1__.StoreComponent.Methods.Init();
+        var storeComponent = (0,vuex__WEBPACK_IMPORTED_MODULE_4__.useStore)(_script_store_store_component__WEBPACK_IMPORTED_MODULE_0__.StoreComponent.StoreKey);
+        _script_store_store_component__WEBPACK_IMPORTED_MODULE_0__.StoreComponent.Methods.Init();
         var toast = storeComponent.state.toast;
         var dialog = storeComponent.state.dialog;
         var windowLoader = storeComponent.state.windowLoader;
         var selectBoxModal = storeComponent.state.selectBoxModal;
         // [▼ Store ▼]-----------------------------------------------------------
-        var storeApp = (0,vuex__WEBPACK_IMPORTED_MODULE_5__.useStore)(_script_store_store_app__WEBPACK_IMPORTED_MODULE_3__.StoreApp.StoreKey);
-        var storeInit = function () { return (0,tslib__WEBPACK_IMPORTED_MODULE_6__.__awaiter)(_this, void 0, void 0, function () {
-            return (0,tslib__WEBPACK_IMPORTED_MODULE_6__.__generator)(this, function (_a) {
+        var storeApp = (0,vuex__WEBPACK_IMPORTED_MODULE_4__.useStore)(_script_store_store_app__WEBPACK_IMPORTED_MODULE_2__.StoreApp.StoreKey);
+        var storeInit = function () { return (0,tslib__WEBPACK_IMPORTED_MODULE_5__.__awaiter)(_this, void 0, void 0, function () {
+            return (0,tslib__WEBPACK_IMPORTED_MODULE_5__.__generator)(this, function (_a) {
                 switch (_a.label) {
-                    case 0: return [4 /*yield*/, _script_store_store_app__WEBPACK_IMPORTED_MODULE_3__.StoreApp.Methods.App.Init()];
+                    case 0: return [4 /*yield*/, _script_store_store_app__WEBPACK_IMPORTED_MODULE_2__.StoreApp.Methods.App.Init()];
                     case 1:
                         _a.sent();
                         return [2 /*return*/];
@@ -3944,10 +3869,11 @@ __webpack_require__.r(__webpack_exports__);
         }); };
         storeInit();
         // [▼ reactive ▼]--------------------------------------------------------
+        (0,vue__WEBPACK_IMPORTED_MODULE_3__.onMounted)(function () {
+            document.title = 'pdfme-designer';
+        });
         //-----------------------------------------------------------------------------
         return {
-            VueRouter: _script_vue_router__WEBPACK_IMPORTED_MODULE_0__.VueRouter,
-            activePageName: activePageName,
             storeApp: storeApp,
             storeComponent: storeComponent,
             state: state,
@@ -8214,7 +8140,7 @@ var FileSelect = /** @class */ (function () {
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
-/* harmony import */ var tslib__WEBPACK_IMPORTED_MODULE_11__ = __webpack_require__(/*! tslib */ "./node_modules/tslib/tslib.es6.js");
+/* harmony import */ var tslib__WEBPACK_IMPORTED_MODULE_10__ = __webpack_require__(/*! tslib */ "./node_modules/tslib/tslib.es6.js");
 /* harmony import */ var _pdfme_ui__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @pdfme/ui */ "./node_modules/@pdfme/ui/dist/index.js");
 /* harmony import */ var _pdfme_ui__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_pdfme_ui__WEBPACK_IMPORTED_MODULE_0__);
 /* harmony import */ var _script_com_com_pdf__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @/script/com/com-pdf */ "./src/script/com/com-pdf.ts");
@@ -8223,10 +8149,9 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _script_vc_components_vc_form_control_vc_select_box_modal_script__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! @/script/vc-components/vc-form-control/vc-select-box-modal-script */ "./src/script/vc-components/vc-form-control/vc-select-box-modal-script.ts");
 /* harmony import */ var _script_vc_components_vc_form_control_vc_select_box_script__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! @/script/vc-components/vc-form-control/vc-select-box-script */ "./src/script/vc-components/vc-form-control/vc-select-box-script.ts");
 /* harmony import */ var _script_store_store_app__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! @/script/store/store-app */ "./src/script/store/store-app.ts");
-/* harmony import */ var _script_vue_router__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! @/script/vue-router */ "./src/script/vue-router.ts");
-/* harmony import */ var vue__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! vue */ "./node_modules/vue/dist/vue.runtime.esm-bundler.js");
-/* harmony import */ var vuex__WEBPACK_IMPORTED_MODULE_10__ = __webpack_require__(/*! vuex */ "./node_modules/vuex/dist/vuex.esm-bundler.js");
-/* harmony import */ var _view_com_pdf_desiner__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! ./view-com-pdf-desiner */ "./src/script/views/com/view-com-pdf-desiner.ts");
+/* harmony import */ var vue__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! vue */ "./node_modules/vue/dist/vue.runtime.esm-bundler.js");
+/* harmony import */ var vuex__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! vuex */ "./node_modules/vuex/dist/vuex.esm-bundler.js");
+/* harmony import */ var _view_com_pdf_desiner__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! ./view-com-pdf-desiner */ "./src/script/views/com/view-com-pdf-desiner.ts");
 
 //-[pdfme]-------------------------------------------------------------------------
 
@@ -8239,39 +8164,37 @@ __webpack_require__.r(__webpack_exports__);
 
 // [ Store 共通系 ]----------------------------------------------------------------
 
-// [ router ]----------------------------------------------------------------------
-
 // [ vue ]-------------------------------------------------------------------------
 
 
 // [ vue ]-------------------------------------------------------------------------
 
-var InitListItem = _view_com_pdf_desiner__WEBPACK_IMPORTED_MODULE_9__.PdfDesigner.InitListItem;
-var InitMyTemplate = _view_com_pdf_desiner__WEBPACK_IMPORTED_MODULE_9__.PdfDesigner.InitMyTemplate;
+var InitListItem = _view_com_pdf_desiner__WEBPACK_IMPORTED_MODULE_8__.PdfDesigner.InitListItem;
+var InitMyTemplate = _view_com_pdf_desiner__WEBPACK_IMPORTED_MODULE_8__.PdfDesigner.InitMyTemplate;
 //---------------------------------------------------------------------------------
-/* harmony default export */ __webpack_exports__["default"] = ((0,vue__WEBPACK_IMPORTED_MODULE_8__.defineComponent)({
+/* harmony default export */ __webpack_exports__["default"] = ((0,vue__WEBPACK_IMPORTED_MODULE_7__.defineComponent)({
     // components: {},
     setup: function () {
         var _this = this;
         // ----------------------------------------------------------------------
-        var storeComponent = (0,vuex__WEBPACK_IMPORTED_MODULE_10__.useStore)(_script_store_store_component__WEBPACK_IMPORTED_MODULE_3__.StoreComponent.StoreKey);
+        var storeComponent = (0,vuex__WEBPACK_IMPORTED_MODULE_9__.useStore)(_script_store_store_component__WEBPACK_IMPORTED_MODULE_3__.StoreComponent.StoreKey);
         var toast = storeComponent.state.toast;
         var selectBoxModal = storeComponent.state.selectBoxModal;
         // ----------------------------------------------------------------------
-        var storeApp = (0,vuex__WEBPACK_IMPORTED_MODULE_10__.useStore)(_script_store_store_app__WEBPACK_IMPORTED_MODULE_6__.StoreApp.StoreKey);
+        var storeApp = (0,vuex__WEBPACK_IMPORTED_MODULE_9__.useStore)(_script_store_store_app__WEBPACK_IMPORTED_MODULE_6__.StoreApp.StoreKey);
         /**
          * 初期化用フォント名
          */
-        var defaultFont = (0,vue__WEBPACK_IMPORTED_MODULE_8__.computed)(function () {
+        var defaultFont = (0,vue__WEBPACK_IMPORTED_MODULE_7__.computed)(function () {
             return Object.keys(storeApp.state.pdf.font)[0];
         });
-        var state = (0,vue__WEBPACK_IMPORTED_MODULE_8__.reactive)({
+        var state = (0,vue__WEBPACK_IMPORTED_MODULE_7__.reactive)({
             elms: {
                 pdfDesiner: null,
             },
             fileSelect: {
-                baseUrl: new _view_com_pdf_desiner__WEBPACK_IMPORTED_MODULE_9__.FileSelect(),
-                template: new _view_com_pdf_desiner__WEBPACK_IMPORTED_MODULE_9__.FileSelect(),
+                baseUrl: new _view_com_pdf_desiner__WEBPACK_IMPORTED_MODULE_8__.FileSelect(),
+                template: new _view_com_pdf_desiner__WEBPACK_IMPORTED_MODULE_8__.FileSelect(),
             },
             control: {
                 targetList: new _script_vc_components_vc_form_control_vc_select_box_script__WEBPACK_IMPORTED_MODULE_5__.SelectConfig('ターゲットリスト', null, true, '選択してください。', true),
@@ -8305,9 +8228,9 @@ var InitMyTemplate = _view_com_pdf_desiner__WEBPACK_IMPORTED_MODULE_9__.PdfDesig
         /**
          * ファイル選択：既存テンプレートの選択
          */
-        var fileSelectTemplateShow = function () { return (0,tslib__WEBPACK_IMPORTED_MODULE_11__.__awaiter)(_this, void 0, void 0, function () {
+        var fileSelectTemplateShow = function () { return (0,tslib__WEBPACK_IMPORTED_MODULE_10__.__awaiter)(_this, void 0, void 0, function () {
             var ret, getTemplate, baseTemplate_1, font, error_1;
-            return (0,tslib__WEBPACK_IMPORTED_MODULE_11__.__generator)(this, function (_a) {
+            return (0,tslib__WEBPACK_IMPORTED_MODULE_10__.__generator)(this, function (_a) {
                 switch (_a.label) {
                     case 0:
                         _a.trys.push([0, 7, , 8]);
@@ -8387,9 +8310,9 @@ var InitMyTemplate = _view_com_pdf_desiner__WEBPACK_IMPORTED_MODULE_9__.PdfDesig
         /**
          * ファイル選択：BasePDFの変更
          */
-        var fileSelectBaseUrlShow = function () { return (0,tslib__WEBPACK_IMPORTED_MODULE_11__.__awaiter)(_this, void 0, void 0, function () {
+        var fileSelectBaseUrlShow = function () { return (0,tslib__WEBPACK_IMPORTED_MODULE_10__.__awaiter)(_this, void 0, void 0, function () {
             var ret;
-            return (0,tslib__WEBPACK_IMPORTED_MODULE_11__.__generator)(this, function (_a) {
+            return (0,tslib__WEBPACK_IMPORTED_MODULE_10__.__generator)(this, function (_a) {
                 switch (_a.label) {
                     case 0: return [4 /*yield*/, state.fileSelect.baseUrl.ShowFileSelect()];
                     case 1:
@@ -8419,7 +8342,7 @@ var InitMyTemplate = _view_com_pdf_desiner__WEBPACK_IMPORTED_MODULE_9__.PdfDesig
             }
         };
         // - [ 差分比較 ]--------------------------------------------------
-        (0,vue__WEBPACK_IMPORTED_MODULE_8__.watch)(function () { return (0,vue__WEBPACK_IMPORTED_MODULE_8__.computed)(function () { return JSON.stringify(state.data.edit); }).value; }, function () {
+        (0,vue__WEBPACK_IMPORTED_MODULE_7__.watch)(function () { return (0,vue__WEBPACK_IMPORTED_MODULE_7__.computed)(function () { return JSON.stringify(state.data.edit); }).value; }, function () {
             state.data.isChange = _script_com_com__WEBPACK_IMPORTED_MODULE_2__.Com.ObjControl.Compare(state.data.edit, state.data.origin);
         }, { deep: true });
         var resetSchemas = function () {
@@ -8539,9 +8462,9 @@ var InitMyTemplate = _view_com_pdf_desiner__WEBPACK_IMPORTED_MODULE_9__.PdfDesig
         /**
          * Generatorの初期化
          */
-        var initGenerator = function () { return (0,tslib__WEBPACK_IMPORTED_MODULE_11__.__awaiter)(_this, void 0, void 0, function () {
+        var initGenerator = function () { return (0,tslib__WEBPACK_IMPORTED_MODULE_10__.__awaiter)(_this, void 0, void 0, function () {
             var _a, arg;
-            return (0,tslib__WEBPACK_IMPORTED_MODULE_11__.__generator)(this, function (_b) {
+            return (0,tslib__WEBPACK_IMPORTED_MODULE_10__.__generator)(this, function (_b) {
                 switch (_b.label) {
                     case 0:
                         //初期化用フォントが取得完了していない場合があるためこちらでも取得処理を実行
@@ -8595,8 +8518,8 @@ var InitMyTemplate = _view_com_pdf_desiner__WEBPACK_IMPORTED_MODULE_9__.PdfDesig
                 return;
             }
         };
-        var dataTemplateSet = function (template) { return (0,tslib__WEBPACK_IMPORTED_MODULE_11__.__awaiter)(_this, void 0, void 0, function () {
-            return (0,tslib__WEBPACK_IMPORTED_MODULE_11__.__generator)(this, function (_a) {
+        var dataTemplateSet = function (template) { return (0,tslib__WEBPACK_IMPORTED_MODULE_10__.__awaiter)(_this, void 0, void 0, function () {
+            return (0,tslib__WEBPACK_IMPORTED_MODULE_10__.__generator)(this, function (_a) {
                 // console.log('dataTemplateSet');
                 state.data.edit = _script_com_com__WEBPACK_IMPORTED_MODULE_2__.Com.Obj.Copy(template);
                 return [2 /*return*/];
@@ -8605,8 +8528,8 @@ var InitMyTemplate = _view_com_pdf_desiner__WEBPACK_IMPORTED_MODULE_9__.PdfDesig
         /**
          * テンプレートの初期化
          */
-        var resetTemplate = function () { return (0,tslib__WEBPACK_IMPORTED_MODULE_11__.__awaiter)(_this, void 0, void 0, function () {
-            return (0,tslib__WEBPACK_IMPORTED_MODULE_11__.__generator)(this, function (_a) {
+        var resetTemplate = function () { return (0,tslib__WEBPACK_IMPORTED_MODULE_10__.__awaiter)(_this, void 0, void 0, function () {
+            return (0,tslib__WEBPACK_IMPORTED_MODULE_10__.__generator)(this, function (_a) {
                 dataTemplateReset();
                 updateGeneratorTemplate(state.data.edit);
                 return [2 /*return*/];
@@ -8617,14 +8540,13 @@ var InitMyTemplate = _view_com_pdf_desiner__WEBPACK_IMPORTED_MODULE_9__.PdfDesig
             state.data.edit = InitMyTemplate(defaultFont.value);
             state.data.origin = InitMyTemplate(defaultFont.value);
         };
-        (0,vue__WEBPACK_IMPORTED_MODULE_8__.onMounted)(function () {
+        (0,vue__WEBPACK_IMPORTED_MODULE_7__.onMounted)(function () {
             initGenerator();
         });
         dataTemplateReset();
         return {
             state: state,
             setRef: setRef,
-            VueRouter: _script_vue_router__WEBPACK_IMPORTED_MODULE_7__.VueRouter,
             addListItem: addListItem,
             resetSchemas: resetSchemas,
             fileSelectBaseUrlShow: fileSelectBaseUrlShow,
@@ -8639,80 +8561,6 @@ var InitMyTemplate = _view_com_pdf_desiner__WEBPACK_IMPORTED_MODULE_9__.PdfDesig
         };
     },
 }));
-
-
-/***/ }),
-
-/***/ "./src/script/vue-router.ts":
-/*!**********************************!*\
-  !*** ./src/script/vue-router.ts ***!
-  \**********************************/
-/***/ (function(__unused_webpack_module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-/* harmony export */ __webpack_require__.d(__webpack_exports__, {
-/* harmony export */   "VueRouter": function() { return /* binding */ VueRouter; }
-/* harmony export */ });
-/* harmony import */ var vue_router__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! vue-router */ "./node_modules/vue-router/dist/vue-router.esm-bundler.js");
-/* harmony import */ var _script_com_com_router__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @/script/com/com-router */ "./src/script/com/com-router.ts");
-/* harmony import */ var _script_views_com_view_pdf_designer_vue__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @/script/views/com/view-pdf-designer.vue */ "./src/script/views/com/view-pdf-designer.vue");
-/*-------------------------------------------------------------------------
-  router.ts
---------------------------------------------------------------------------*/
-// [ Vue.js系 ]--------------------------------------------------------------------
-
-// [ Com ]-------------------------------------------------------------------------
-
-// [views com ]-------------------------------------------------------------------------
-
-//----------------------------------------------------------------
-var VueRouter;
-(function (VueRouter) {
-    VueRouter.Page = _script_com_com_router__WEBPACK_IMPORTED_MODULE_0__.ComRouter;
-    VueRouter.Navigate = function (page, params) {
-        if (params === void 0) { params = undefined; }
-        if (params !== undefined) {
-            VueRouter.Router.push({ name: page.name, params: params });
-        }
-        else {
-            VueRouter.Router.push({ name: page.name });
-        }
-    };
-    VueRouter.Replace = function (page, params) {
-        if (params === void 0) { params = undefined; }
-        if (params !== undefined) {
-            VueRouter.Router.replace({ name: page.name, params: params });
-        }
-        else {
-            VueRouter.Router.replace({ name: page.name });
-        }
-    };
-    var route = function (page, component) {
-        var ret = {
-            path: page.path,
-            name: page.name,
-            component: component,
-            meta: page.meta,
-        };
-        return ret;
-    };
-    var routes = [
-        route(VueRouter.Page.Com.Dashboard, _script_views_com_view_pdf_designer_vue__WEBPACK_IMPORTED_MODULE_1__["default"]),
-        {
-            path: '/',
-            redirect: { name: VueRouter.Page.Com.Dashboard.name },
-        },
-        {
-            path: '/:any',
-            redirect: { name: VueRouter.Page.Com.Dashboard.name },
-        },
-    ];
-    VueRouter.Router = (0,vue_router__WEBPACK_IMPORTED_MODULE_2__.createRouter)({
-        history: (0,vue_router__WEBPACK_IMPORTED_MODULE_2__.createWebHistory)(),
-        routes: routes,
-    });
-})(VueRouter || (VueRouter = {}));
 
 
 /***/ }),
